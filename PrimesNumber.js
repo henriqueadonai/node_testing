@@ -1,9 +1,5 @@
 const PrimesTesting = 25000;
 
-
-
-
-
 function Primes(){
     this.primes = [];
     this.primes_count = 0;
