@@ -16,20 +16,13 @@ for (var i=0; i< cats.length; i++){
         kittens.push(cats[i].name);
     }
 }
-
 console.log("POOR loop");
 console.log(kittens);
 
-const isKitten = cats => cats.months < 7;
-const getName = cats =>cats.name;
- 
- //var kittens_good = [];
-//  for (var i=0; i< cats.length; i++){
-//      if (isKitten(cats[i])){
-//          kittens_good.push(getName(cats[i]));
-//          //kittens_good.push(cats[i].name);
-//      }
-//  }
+
+const isKitten = kat => kat.months < 7;
+const getName = kat =>kat.name;
+
 console.log();
 console.log("Cats Filter age bigger than 80");
 cats.filter(function (cat){
@@ -49,5 +42,8 @@ console.log();
  console.log("Good Loop:");
  console.log(kittens_good);
 
-//isKitten = "henrique";
-//console.dir(isKitten);
+const getKittenNames = catsis => catsis.filter(isKitten).map(getName);
+const kittens_excellent = getKittenNames(cats);
+console.log();
+console.log("kittens_excellent");
+console.log(kittens_excellent);
