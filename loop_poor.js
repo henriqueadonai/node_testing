@@ -47,3 +47,4 @@ const kittens_excellent = getKittenNames(cats);
 console.log();
 console.log("kittens_excellent");
 console.log(kittens_excellent);
+

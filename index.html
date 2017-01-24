@@ -1,0 +1,43 @@
+<a href="http://www.thatjsdude.com/interview/js2.html#nullVsUndefined"></a>
+<a href="https://coderbyte.com/">https://coderbyte.com/</a>
+<a href="http://jstherightway.org/"> http://jstherightway.org/</a>
+
+
+<ul id="todo-app">
+  <li class="item">Grocery Day</li>
+  <li class="item">Play PS4</li>
+  <li class="item">Running morning</li>
+  <li class="item">Netflix time</li>
+  <li class="item">Work Daily</li>
+</ul>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+//Per Item
+//   let app = document.getElementById('todo-app');
+//   let items = app.getElementsByClassName('item');
+  
+//   // attach event listener to each item
+//   for (let item of items) {
+//     item.addEventListener('click', function() {
+//       alert('you clicked on item: ' + item.innerHTML);
+//     });
+//   }
+
+//delegation
+    let app = document.getElementById('todo-app');
+    app.addEventListener('click', function(e){
+        if(e.target && e.target.nodeName === 'LI'){
+            let item = e.target;
+            console.dir(item);
+            alert('you clicked on item: ' + item.innerHTML);
+        }
+})
+
+
+
+  
+});
+</script>
