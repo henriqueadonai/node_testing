@@ -5,7 +5,7 @@ const cats =[
     {name:'Pickles', months:6},
     {name:'Hulk', months:5},
     {name:'Spider', months:10},
-
+    {name:'Iron', months:11} 
 ]
 
 var kittens =[];
@@ -47,4 +47,7 @@ const kittens_excellent = getKittenNames(cats);
 console.log();
 console.log("kittens_excellent");
 console.log(kittens_excellent);
+
+const cats = [
+
 

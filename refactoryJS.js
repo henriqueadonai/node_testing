@@ -57,6 +57,10 @@ function createEmployees () {
         console.log("working=" + av2);
     }  
 
+    //averageSalary(empls, [function(e){return e.salary > 50}, sales.works]))
+    //  var filtered = _.filter(employees, and(conditions))
+
+
    let filtered = _.filter(empls,function(num){ return num.salary > 50;} );
     console.log(filtered);
 
