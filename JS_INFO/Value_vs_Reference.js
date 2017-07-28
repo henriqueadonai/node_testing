@@ -98,8 +98,13 @@ function changeAgeAndReference(person) {
 }
 var personObj1 = {
     name: 'Alex',
+
     age: 30
 };
 var personObj2 = changeAgeAndReference(personObj1);
 console.log(personObj1); // -> ?
 console.log(personObj2); // -> ?
+
+
+
+foo(arg1, arg2, arg3, arg4);
