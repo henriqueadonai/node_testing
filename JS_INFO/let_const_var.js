@@ -1,3 +1,8 @@
+//Const and let introduced block scope to Javascript 
+// First, I look at const. If I’m not intending to do any reassignment, then const is a clear winner. 
+//(You should use const whenever you can.) Next, I look to let. And I basically use let in every situation where I don’t use const, 
+//ie, there will be a reassignment. My last choice is var. If for some reason, neither const nor let will provide me with the needed behavior, 
+//then fine, var it is…
 
 function variables(){
     "use strict";
