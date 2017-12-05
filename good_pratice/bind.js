@@ -1,4 +1,4 @@
-var monica = {
+var thais = {
     name: 'Thais',
     total: 1000,
     deductMontlyFee: function(fee){
@@ -9,14 +9,14 @@ var monica = {
 
 }
 
-monica.deductMontlyFee(100);
+thais.deductMontlyFee(100);
 
 var katia ={
     name: 'Katia',
     total: 1500
 }
 
-var katiaFeedDeductor = monica.deductMontlyFee.bind(katia,200);
+var katiaFeedDeductor = thais.deductMontlyFee.bind(katia,200);
 
 katiaFeedDeductor();
 katiaFeedDeductor();
@@ -27,9 +27,9 @@ var henrique = {
     total: 400
 }
 
-var henriqueFeedDeductor = monica.deductMontlyFee.bind(henrique,25);
+var henriqueFeedDeductor = thais.deductMontlyFee.bind(henrique,25);
 
 henriqueFeedDeductor();
 katiaFeedDeductor();
 henriqueFeedDeductor();
-monica.deductMontlyFee(100);
+thais.deductMontlyFee(100);

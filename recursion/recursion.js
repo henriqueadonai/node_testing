@@ -28,5 +28,19 @@ var nome = 'Henrique'
 //console.log(nome[0]);
 //console.log(nome.substr(1) + nome[0]);
 //console.log(nome.substr(1));
-
 //console.log(Array.from(nome));
+
+console.log("REVERSE STRING");
+function reverseString(str){
+    console.log(str.length);
+    //console.log(str[1])
+    let strreverse =""
+    for(i = str.length-1; i >= 0; i--){
+        strreverse += str[i];
+    }
+    return strreverse;
+}
+
+console.log(reverseString(nome));
+
+

@@ -18,15 +18,17 @@ b = 'def';
 console.log(x, y, a, b); // -> 10, 'abc', 5, 'def'
 
 //Reference Array
+console.log("Reference Array");
 var reference = [1,2];
 var refCopy = reference;
 console.log(reference, refCopy);
 
-
+console.log("Reference Array PUSH");
 reference.push(3);
 console.log(reference, refCopy);
 
 
+console.log("Reference Array HI");
 var arrRef = ['Hi!'];
 var arrRef2 = arrRef;
 console.log(arrRef === arrRef2); // -> true
@@ -107,4 +109,4 @@ console.log(personObj2); // -> ?
 
 
 
-foo(arg1, arg2, arg3, arg4);
+//foo(arg1, arg2, arg3, arg4);

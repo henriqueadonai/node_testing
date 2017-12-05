@@ -31,6 +31,7 @@ const sum = array.reduce((a,b) => a+b,0);
 console.log("SOMA = " + sum);
 
 const truthyCount = array.filter(Boolean).length;
+console.log("truthyCount");
 console.log(truthyCount);
 
 

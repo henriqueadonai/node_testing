@@ -19,18 +19,30 @@ function variables(){
 
     if (points > 40){
         let winner = true;
+        console.log("winner = points > 40");
         console.log(winner);
     }
+    console.log("winner");
     console.log(winner);
 
     //Don't work because of let.
     //let points = 60
+    console.log("let points = 50")
+    console.log(points)
+    console.log("let points = 60")
     points = 60;
+    console.log(points)
 
     //Don't work because it's const
     //key = `def456`;
     //person = { weather: "hot"};
-    person.age = 33;
+    person.age = "OLD";
+    console.dir(person);
+
+    console.log("KEY")
+    console.log(key);
+    //key = "henene"
+    //console.log(key)
 
 }
 

@@ -44,8 +44,10 @@ function createEmployees () {
   new Employee("Sheldon", 40),
   ]
   var sales = new Department([empls[0], empls[1]])
+  console.log("SALES")
   console.log(sales);
     var av1 = averageSalary(empls, 50, sales);
+    console.log("AVERAGE SALARY");
     console.log(av1);
     if (av1 == 150){
         console.log("working=" + av1);

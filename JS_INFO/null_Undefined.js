@@ -16,3 +16,8 @@ console.log(test2);
 
 console.log(typeof test2);
 // undefined
+
+var test3 = 123
+console.log(test3)
+
+console.log(typeof  test3);

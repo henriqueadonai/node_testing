@@ -7,12 +7,13 @@ const data = [];
 for (let x = 1; x <= 100000; x++){
     data.push({x : x, y: Math.floor(Math.random() * (1000000))})
 }
-
+console.log("data length")
 console.log(data.length);
 
 
 //Using Reduce is a handy Array Method that applies a function against an accumulator
 //and each element in the array (from left to right) to reduce it to a single value
+//arr.reduce(callback[, initialValue])
 
 let functionsum = [1, 2, 3].reduce(function(total, num){  return total + num}, 0);
 let sum = [1, 2, 3].reduce((total, num) => total + num, 0);
@@ -20,7 +21,18 @@ let sum = [1, 2, 3].reduce((total, num) => total + num, 0);
 console.log(functionsum);
 console.log(sum);
 
-function getMinYReduce(){
+function getMinReduceComplete(){
+    console.log(data[0].y)
+    return data.reduce(function(min,p){
+        if(p.y < min){
+         return p.y;
+        }else{
+          return min;      
+        }
+    }, data[0].y)
+}
+
+function getMinYReduce(){    
     return data.reduce((min,p)=> p.y < min ? p.y :min, data[0].y);
 }
 
@@ -28,7 +40,11 @@ function getMaxYReduce(){
     return data.reduce((max,p)=> p.y > max ? p.y : max, data[0].y);
 }
 
+console.log("getMinReduceComplete");
+console.log(getMinReduceComplete());
+console.log("getMinYReduce");
 console.log(getMinYReduce());
+console.log("getMaxYReduce");
 console.log(getMaxYReduce());
 
 
